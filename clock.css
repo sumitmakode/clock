@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+.mainclock{
+
+	height: 400px;
+    width: 400px;
+    background-color: #803b00e8;
+    border-bottom: 15px ridge #483b3bcc;
+    border-top: 15px ridge #483b3bcc;
+    border-right: 15px ridge #483b3bcc;
+    border-left: 15px ridge #483b3bcc;
+	position: relative;
+	border-radius: 100%;
+	margin: auto;
+}
+
+
+.num{
+	--rotat:0;
+	height: 400px;
+	width: 100%;
+	font-weight: 900;
+	font-size: 25px;
+	position: absolute;
+	text-align: center;
+	transform: rotate(calc(var(--rotat)*1deg));
+}
+
+.num1{
+	--rotat:30;
+}
+.num2{
+	--rotat:60;
+}
+.num3{
+	--rotat:90;
+}
+.num4{
+	--rotat:120;
+}
+.num5{
+	--rotat:150;
+}
+.num6{
+	--rotat:180;
+}
+.num7{
+	--rotat:210;
+}
+.num8{
+	--rotat:240;
+}
+.num9{
+	--rotat:270;
+}
+
+.num10{
+	--rotat:300;
+}
+
+.num11{
+	--rotat:330;
+}
+
+.num12{
+	--rotat:360;
+}
+
+
+.set{
+	--ro:0;
+	position: absolute;
+	left:50%;
+	bottom: 50%;
+	transform: translate(-50%) rotate(calc(var(--ro)*1deg));
+	transform-origin: bottom;
+
+}
+
+.hour{
+	height: 35%;
+	width: 10px;
+	background-color: gray;
+}
+
+
+.minute{
+	height: 38%;
+	width: 10px;
+	background-color: black;
+}
+
+.second{
+	
+
+   height: 40%;
+	width: 5px;
+	background-color: red;
+}
+
+.gol{
+	    position: absolute;
+    height: 27px;
+    width: 7%;
+    left: 50%;
+    background-color:red;
+    border-radius: 100%;
+    top: 47%;
+    z-index: 1;
+    left: 47%;
+}
